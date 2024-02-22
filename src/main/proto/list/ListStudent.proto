@@ -1,0 +1,17 @@
+syntax = "proto3";
+option java_package = "org.example.list";
+option java_multiple_files = true;
+
+//import "grpcCollection/School.proto";
+
+package list;
+
+message Student{
+  string name = 1;
+  string email = 2;
+}
+
+message ListStudent {
+  repeated Student student = 1;
+}
+

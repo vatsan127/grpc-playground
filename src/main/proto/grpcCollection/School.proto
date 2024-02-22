@@ -1,0 +1,19 @@
+syntax = "proto3";
+option java_package = "org.example.grpcCollection";
+
+package school;
+
+message Email{
+  string email = 1;
+  string password = 2;
+}
+
+message Student{
+  string name = 1;
+  int32 age = 2;
+  Email email = 3;
+}
+
+message School{
+  Student student = 1;
+}

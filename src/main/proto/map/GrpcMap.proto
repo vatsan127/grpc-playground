@@ -1,0 +1,13 @@
+syntax = "proto3";
+option java_package = "org.example.grpc.map";
+
+package map;
+
+message Student{
+  string name = 1;
+  string email = 2;
+}
+
+message StudentMap{
+  map<string, Student> studentMap = 1 ;
+}

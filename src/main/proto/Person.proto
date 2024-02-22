@@ -1,0 +1,9 @@
+syntax = "proto3";
+package pilot;
+
+option java_package = "org.example.person";
+
+message Person{
+  string name = 1;
+  int32 age = 2;
+}
