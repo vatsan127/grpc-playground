@@ -1,0 +1,18 @@
+syntax = "proto3";
+
+package bankservice;
+
+option java_package = "org.example.grpc.collection";
+
+message BankRequest{
+  int32 accountNumber = 1;
+}
+
+message BankResponse{
+  int32 accountNumber = 1;
+  int32 accountBalance = 2;
+}
+
+service BankService{
+  rpc GetAccountBalance(BankRequest) returns (BankResponse);
+}
