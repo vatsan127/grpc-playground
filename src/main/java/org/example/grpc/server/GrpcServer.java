@@ -57,7 +57,7 @@ public class GrpcServer {
 
     public void stop(){
         server.shutdownNow();
-        log.info("gRPC Server stopped");
+        log.debug("gRPC Server stopped");
     }
 
 }
